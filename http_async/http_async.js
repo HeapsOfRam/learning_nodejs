@@ -34,12 +34,10 @@ function queue_collections(http_addresses){
 
 function print_from_queue(printing_queue){
 	for(var i = 0; i < printing_queue.length; i++){
-		var true_location = -1;
 		for(var q = 0; q < location_array.length; q++){
 			if(i == location_array[q])
-				true_location = q;
+				console.log(printing_queue[q]);
 		}	
-		console.log(printing_queue[true_location]);
 	}
 }
 
